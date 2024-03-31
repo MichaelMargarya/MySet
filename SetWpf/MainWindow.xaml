@@ -1,0 +1,24 @@
+﻿<Window x:Class="SetWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SetWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox HorizontalAlignment="Left" Margin="32,45,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Operation" HorizontalAlignment="Left" Margin="230,45,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="union">UNION</ComboBoxItem>
+            <ComboBoxItem Name="intersection" >INTERSECTION</ComboBoxItem>
+            <ComboBoxItem Name="difference">DIFFERENCE</ComboBoxItem>
+            <ComboBoxItem Name="symetricDif">SYMETRIC DIF</ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="431,45,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Evaluate" HorizontalAlignment="Left" Margin="609,52,0,0" VerticalAlignment="Top" Width="120" Click="Evaluate"/>
+        <ListBox  Margin="0,103,591,0"/>
+        <ListBox  Margin="307,115,307,0"/>
+        <ListBox  Margin="588,131,0,0"/>
+
+    </Grid>
+</Window>
